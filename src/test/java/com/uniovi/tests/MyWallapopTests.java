@@ -54,7 +54,7 @@ public class MyWallapopTests {
 	// Común a Windows y a MACOSX
 	static WebDriver driver = getDriver(PathFirefox65, Geckdriver024);
 	static String URLremota = "http://ec2-18-217-40-214.us-east-2.compute.amazonaws.com";
-	static String URLlocal = "http://localhost:8090";
+	static String URLlocal = "http://localhost:8081";
 	static String URL = URLlocal; // Se va a probar con la URL local
 	// static String URL = URLremota; // Se va a probar con la URL remota
 
