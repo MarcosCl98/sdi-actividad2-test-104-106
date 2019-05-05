@@ -11,7 +11,7 @@ import com.uniovi.tests.util.SeleniumUtils;
 public class PO_ListBidView extends PO_NavView {
 
     static public void fillForm(WebDriver driver, String search) {
-	WebElement searchText = driver.findElement(By.name("searchText"));
+	WebElement searchText = driver.findElement(By.name("busqueda"));
 	searchText.click();
 	searchText.clear();
 	searchText.sendKeys(search);

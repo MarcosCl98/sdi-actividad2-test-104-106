@@ -22,6 +22,17 @@ public class SeleniumUtils {
 	List<WebElement> list = driver.findElements(By.xpath("//*[contains(text(),'" + texto + "')]"));
 	assertTrue("Texto " + texto + " no localizado!", list.size() > 0);
     }
+    
+    static public void esperarSegundos(WebDriver driver, int segundos) {
+
+		synchronized (driver) {
+			try {
+				driver.wait(segundos * 1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+	}
 
     /**
      * Aborta si el "texto" está presente en la página actual

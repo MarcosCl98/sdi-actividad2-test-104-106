@@ -41,7 +41,7 @@ public class PO_AddBidView extends PO_NavView {
 	price.click();
 	price.clear();
 	price.sendKeys(precio);
-	WebElement specialBid = driver.findElement(By.name("specialBid"));
+	WebElement specialBid = driver.findElement(By.name("isSpecial"));
 	specialBid.click();
 	// Pulsar el boton de Alta.
 	By boton = By.className("btn");
