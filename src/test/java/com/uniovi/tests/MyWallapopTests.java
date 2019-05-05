@@ -17,36 +17,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.uniovi.tests.pageobjects.PO_AddBidView;
-import com.uniovi.tests.pageobjects.PO_ChatView;
-import com.uniovi.tests.pageobjects.PO_ForbiddenView;
 import com.uniovi.tests.pageobjects.PO_HomeView;
 import com.uniovi.tests.pageobjects.PO_ListBidView;
 import com.uniovi.tests.pageobjects.PO_LoginView;
-import com.uniovi.tests.pageobjects.PO_NavView;
-import com.uniovi.tests.pageobjects.PO_OfertasView;
 import com.uniovi.tests.pageobjects.PO_Properties;
 import com.uniovi.tests.pageobjects.PO_RegisterView;
-import com.uniovi.tests.pageobjects.PO_UsersView;
 import com.uniovi.tests.pageobjects.PO_View;
 import com.uniovi.tests.util.SeleniumUtils;
 
 //Ordenamos las pruebas por el nombre del método
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class MyWallapopTests {
-//	@Autowired
-//	private UsersService usersService;
-//	@Autowired
-//	private RolesService rolesService;
-//	@Autowired
-//	private BidsService bidService;
-//	@Autowired
-//	private ConversationService conversationService;
-//	@Autowired
-//	private UsersRepository usersRepository;
 
 	// En Windows (Debe ser la versión 65.0.1 y desactivar las actualizacioens
 	// automáticas)):
@@ -565,8 +548,6 @@ public class MyWallapopTests {
 			elementos = PO_View.checkElement(driver, "free", "//a[contains(@href, '/bid/list')]");
 			// Pinchamos en ver ofertas
 			elementos.get(0).click();
-			// Cogemos el dinero que tiene
-			int saldoActual = 80;
 			// Clickamos el buscador y buscamos una oferta
 			elementos = PO_View.checkElement(driver, "free", "//input");
 			elementos.get(0).click();
@@ -595,8 +576,6 @@ public class MyWallapopTests {
 			elementos = PO_View.checkElement(driver, "free", "//a[contains(@href, '/bid/list')]");
 			// Pinchamos en ver ofertas
 			elementos.get(0).click();
-			// Cogemos el dinero que tiene
-			int saldoActual = 80;
 			// Clickamos el buscador y buscamos una oferta
 			elementos = PO_View.checkElement(driver, "free", "//input");
 			elementos.get(0).click();
