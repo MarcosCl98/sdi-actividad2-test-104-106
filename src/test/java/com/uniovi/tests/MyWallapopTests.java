@@ -272,21 +272,10 @@ public class MyWallapopTests {
 //		SeleniumUtils.textoPresentePagina(driver,"100");
 //	}
 //
-//	@Test
-//	// Registro de Usuario con email vacío, nombre vacío, apellidos vacío.
-//	public void Prueba02() {
-//		// Vamos al formulario de registro
-//		PO_HomeView.clickOption(driver, "signup", "class", "btn btn-primary");
-//		// Rellenamos el formulario.
-//		PO_RegisterView.fillForm(driver, "", "", "", "77777", "77777");
-//		PO_View.getP();
-//		// COmprobamos el error de campo vacio.
-//		SeleniumUtils.textoPresentePagina(driver,"Error, campo email vacío.");
-//	}
 //
 //	@Test
 //	// Registro de Usuario con repetición contraseña inválida.
-//	public void Prueba03() {
+//	public void Prueba02() {
 //		// Vamos al formulario de registro
 //		PO_HomeView.clickOption(driver, "signup", "class", "btn btn-primary");
 //		// Rellenamos el formulario.
@@ -298,14 +287,15 @@ public class MyWallapopTests {
 //
 //	@Test
 //	// Registro de Usuario con email existente.
-//	public void Prueba04() {
+//	public void Prueba03() {
 //		// Vamos al formulario de registro
 //		PO_HomeView.clickOption(driver, "signup", "class", "btn btn-primary");
 //		// Rellenamos el formulario.
-//		PO_RegisterView.fillForm(driver, "pedro@gmail.com", "Lorenzo", "Berto", "77777", "77777");
+//		PO_RegisterView.fillForm(driver, "prueba1@prueba1.com", "Lorenzo", "Berto", "77777", "77777");
 //		PO_View.getP();
 //		// COmprobamos el error de campo vacio.
-//		PO_RegisterView.checkKey(driver, "Error.signup.email.duplicate", PO_Properties.getSPANISH());
+//		SeleniumUtils.textoPresentePagina(driver,"Error al registrar usuario, email ya existente.");
+//		
 //	}
 //
 //	@Test
